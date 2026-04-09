@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymetrics Calculator</title>
+    <link id="site-favicon" rel="icon" type="image/png" href="./gymetrics%20favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="brand">
+        <img id="brand-logo" class="brand-logo" alt="Gymetrics logo" hidden />
+        <h1 class="brand-title">GYMETRICS</h1>
+        <p>Minimal fitness calculator</p>
+      </header>
+
+      <section class="card">
+        <div class="grid">
+          <label>
+            Age (years)
+            <input id="age" type="number" min="1" step="1" placeholder="e.g. 28" />
+          </label>
+
+          <label>
+            Weight (kg)
+            <input id="weight" type="number" min="1" step="0.1" placeholder="e.g. 82" />
+          </label>
+
+          <label>
+            Height (cm)
+            <input id="height" type="number" min="1" step="0.1" placeholder="e.g. 180" />
+          </label>
+
+          <label>
+            Body fat percentage (%)
+            <input id="bodyFat" type="number" min="0" max="100" step="0.1" placeholder="e.g. 18" />
+          </label>
+
+          <label>
+            Lean body mass percentage (%)
+            <input id="leanPct" type="number" min="0" max="100" step="0.1" placeholder="e.g. 82" />
+          </label>
+
+          <label>
+            Body mass index (BMI)
+            <input id="bmi" type="number" min="1" step="0.01" placeholder="e.g. 25.3" />
+          </label>
+
+          <label>
+            Calorie maintenance (kcal/day)
+            <input id="maintenance" type="number" min="1" step="1" placeholder="e.g. 2550" />
+          </label>
+
+          <label>
+            Calorie deficit (kcal/day)
+            <input id="deficit" type="number" min="1" step="1" placeholder="e.g. 2050" />
+          </label>
+
+          <label>
+            Calorie surplus (kcal/day)
+            <input id="surplus" type="number" min="1" step="1" placeholder="e.g. 2850" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="calculate" type="button">Calculate missing fields</button>
+          <button id="clear" type="button" class="secondary">Clear</button>
+        </div>
+
+        <p class="hint">
+          Fill any fields you know, then calculate. You can type directly into every field. Derived values are estimates.
+        </p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

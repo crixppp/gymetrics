@@ -2,18 +2,6 @@
 
 A minimal static gym calculator (HTML/CSS/JS) designed to run locally or on GitHub Pages.
 
-## Brand assets
-
-You can place the brand image files in the repository root or in an `assets/` folder. The app auto-detects the first matching file from these names:
-
-- `gymetrics full.png`
-- `gymetrics icon.png`
-- `gymetrics icon copy.png`
-- `gymetrics name.png`
-- `gymetrics favicon.png`
-
-If a logo image is found, it is shown in the header. If a favicon image is found, it is applied to the browser tab icon.
-
 ## GitHub Pages compatibility
 
 This project is GitHub Pages compatible out of the box:

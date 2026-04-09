@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gymetrics Calculator</title>
-    <link id="site-favicon" rel="icon" type="image/png" href="./gymetrics%20favicon.png" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="app">
       <header class="brand">
-        <img id="brand-logo" class="brand-logo" alt="Gymetrics logo" hidden />
-        <h1 class="brand-title">GYMETRICS</h1>
+        <h1>GYMETRICS</h1>
         <p>Minimal fitness calculator</p>
       </header>
 
@@ -49,30 +47,31 @@
 
           <label>
             Calorie maintenance (kcal/day)
-            <input id="maintenance" type="number" min="1" step="1" placeholder="auto-calculated" readonly />
+            <input id="maintenance" type="number" min="1" step="1" placeholder="e.g. 2550" />
           </label>
 
           <label>
             Calorie deficit (kcal/day)
-            <input id="deficit" type="number" min="1" step="1" placeholder="auto-calculated" readonly />
+            <input id="deficit" type="number" min="1" step="1" placeholder="e.g. 2050" />
           </label>
 
           <label>
             Calorie surplus (kcal/day)
-            <input id="surplus" type="number" min="1" step="1" placeholder="auto-calculated" readonly />
+            <input id="surplus" type="number" min="1" step="1" placeholder="e.g. 2850" />
           </label>
         </div>
 
         <div class="actions">
+          <button id="calculate" type="button">Calculate missing fields</button>
           <button id="clear" type="button" class="secondary">Clear</button>
         </div>
 
         <p class="hint">
-          Fill any editable fields you know. Calorie fields are auto-calculated. Derived values are estimates.
+          Fill any fields you know, then calculate. You can type directly into every field. Derived values are estimates.
         </p>
       </section>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
